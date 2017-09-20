@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5拖曳多檔案上傳</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+  <div id=register>
+    <h4>Register</h4>
+    memberId: <input type="text" id="memberId"><br>
+    <input type="button" value="Register!" id="registerMember">
+    <div id="message"></div>
+  </div>
+
+
+
+  <div id=checkMember>
+    <h4>Get Member Address</h4>
+    memberId: <input type="text" id="memberIdCheck"><br>
+    <input type="button" value="get!" id="checkMemberButton">
+    <div id="message2"></div>
+  </div>
+
+
+  -------------------------------------------------------------
+  <!-- login -->
+  <div id=login>
+    <h4>Login</h4>
+    memberId: <input type="text" id="loginId"><br>
+    <input type="button" value="Login" id="loginButton">
+    <div id="loginMessage">
+    </div>
+  </div>
+
+    <div id=newFile>
+      <h4>New a tradeSecret</h4>
+      trade secret name: <input type="text" id="tradeSecretName"><br>
+      <input type="button" value="Create File" id="newTradeSecret">
+    </div>
+
+
+
+
+  <div id=data>
+    <h4>Upload</h4>
+    <!--memberId: <input type="text" id="memberId"><br> -->
+    docType: <input type="text" id="docType"><br>
+    docNumber: <input type="text" id="docNumber"><br>
+    docVersion: <input type="text" id="docVer"><br>
+    note: <input type="text" id="note"><br>
+    your file: <input type='file' id='memberFile'><br>
+    <button id="sendFile">Send</button>
+  </div>
+
+<!--   <div id="drop" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+    拖曳到此處上傳
+  </div> -->
+
+  <!-- your file: <input type='file' name='testFile'><br>
+  <button id="sendFile">Send</button> -->
+
+  <!-- <div id="inf"></div> -->
+
+  <!-- ------------------------------------------------------------- -->
+
+  <div id=s>
+    <h4>Search</h4>
+    docHash: <input type="text" id="docHashSearch"><br>
+    <button id="search">Search</button>
+  </div>
+  <div id=searchMessage></div>
+
+
+
+  <!-- -----------
+  <div id="drop" ondragover="dragoverHandler(event)" ondrop="dropHandler(event)">
+        拖曳到此處上傳
+    </div>
+    <div id="inf"></div>
+----------- -->
+
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/web3/dist/web3.min.js"></script>
+  <script src="crypto-js.js"></script>
+  <!-- <script src="index.js"></script> -->
+  <script src="myDemo.js"></script>
+
+
+</body>
+
+</html>
